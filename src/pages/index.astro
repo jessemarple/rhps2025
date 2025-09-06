@@ -311,7 +311,7 @@ import Layout from "../layouts/Layout.astro";
         >
           <h3 class="fs-5 fw-bold mb-3 text-rhps-gold">What's Included</h3>
           <ul class="list-unstyled text-light">
-            <li class="mb-2">• Reserved seating</li>
+            <li class="mb-2">• Guaranteed seating</li>
             <li class="mb-2">• Official prop kit with online pre-order</li>
             <li class="mb-2">• Interactive experience</li>
             <li class="mb-2">• Costume contest entry</li>
@@ -326,10 +326,12 @@ import Layout from "../layouts/Layout.astro";
         >
           <h3 class="fs-5 fw-bold mb-3 text-rhps-gold">Policies</h3>
           <ul class="list-unstyled text-light">
-            <li class="mb-2">• No refunds or exchanges</li>
+            <li class="mb-2">
+              • No refunds. Exchanges on space available basis.
+            </li>
             <li class="mb-2">• Doors open 30 minutes before show</li>
             <li class="mb-2">• Costumes encouraged!</li>
-            <li class="mb-2">• 18+ recommended</li>
+            <li class="mb-2">• 17+ recommended</li>
             <li class="mb-2">
               • We reserve the right to refuse service to anyone
             </li>
@@ -492,10 +494,9 @@ import Layout from "../layouts/Layout.astro";
             Can I bring my own props?
           </h3>
           <p class="text-light">
-            We provide official prop kits with your ticket purchase that include
-            everything you need! You're welcome to bring additional props, but
-            they must be safe and appropriate. No rice, toast, or water guns
-            please - we'll provide safe alternatives.
+            Absolutely not. We provide official prop kits with your online
+            ticket purchase - and avaiable at the door while supplies last -
+            that include everything you need!
           </p>
         </div>
       </div>
@@ -509,9 +510,9 @@ import Layout from "../layouts/Layout.astro";
             Is there an age restriction?
           </h3>
           <p class="text-light">
-            The show is recommended for ages 18+ due to mature content, adult
-            themes, and strong language. All attendees must be accompanied by an
-            adult if under 18.
+            The show is rated R by the MPAA and recommended for ages 17+ due to
+            mature content, adult themes, and strong language. All attendees
+            should be accompanied by an adult if under 18.
           </p>
         </div>
       </div>
@@ -526,8 +527,8 @@ import Layout from "../layouts/Layout.astro";
           </h3>
           <p class="text-light">
             Absolutely! Costumes are highly encouraged and add to the fun. We'll
-            have a costume contest with prizes. Whether you go as
-            Frank-N-Furter, Janet, Brad, or any other character, let your
+            have a costume contest with prizes at the midnight show. Whether you
+            go as Frank-N-Furter, Janet, Brad, or any other character, let your
             creativity shine!
           </p>
         </div>
@@ -539,8 +540,8 @@ import Layout from "../layouts/Layout.astro";
         >
           <h3 class="fs-5 fw-bold mb-3 text-rhps-gold">When do doors open?</h3>
           <p class="text-light">
-            Doors open 30 minutes before showtime. We recommend arriving 45-60
-            minutes before showtime to find parking and get seated.
+            Doors open 30 minutes before showtime. We recommend arriving 30-45
+            minutes before showtime to find parking and the best get seating.
           </p>
         </div>
       </div>
@@ -570,9 +571,9 @@ import Layout from "../layouts/Layout.astro";
             Can I get a refund or exchange my tickets?
           </h3>
           <p class="text-light">
-            All ticket sales are final. No refunds or exchanges are available.
-            Please double-check your show date and time before completing your
-            purchase.
+            All ticket sales are final. No refunds are available. Exchanges are
+            available on space-available basis. Please double-check your show
+            date and time before completing your purchase.
           </p>
         </div>
       </div>
@@ -586,9 +587,7 @@ import Layout from "../layouts/Layout.astro";
             Is there parking available?
           </h3>
           <p class="text-light">
-            Yes but also no. Nearby street parking is available. We recommend
-            arriving 45-60 minutes before showtime to find parking and get
-            seated.
+            Yes but also no. Nearby street parking is available.
           </p>
         </div>
       </div>
@@ -800,7 +799,7 @@ import Layout from "../layouts/Layout.astro";
           <h3 class="fs-5 fw-bold mb-3">Costumes</h3>
           <p class="text-light">
             People tend to dress up, but it's not required. Show off your best
-            Rocky Horror costume and compete for clout. Who's goign to be best
+            Rocky Horror costume and compete for clout. Who's going to be best
             in show this year?
           </p>
         </div>
@@ -868,9 +867,7 @@ import Layout from "../layouts/Layout.astro";
     </p>
     <p class="mb-3">25th Anniversary Production • October 24-25, 2025</p>
     <p class="small">"Don't dream it, be it!" - Dr. Frank-N-Furter</p>
-    <p class="small">
-      Copyright 2025, The Rocky Horror Picture Show Experience at The Kenworthy
-    </p>
+    <p class="small">Copyright 2025, Sirius Entertainment</p>
     <p class="small" aria-label="love" title="love">
       This site was made with ❤️ by <a
         href="https://www.jessemarple.com/"
@@ -928,9 +925,11 @@ import Layout from "../layouts/Layout.astro";
 
       // Set coordinates for Moscow, ID (The Kenworthy Performing Arts Centre)
       const moscowId = new mapkit.CoordinateRegion(
-        new mapkit.Coordinate(46.7324, -117.0002), // Moscow, ID coordinates
+        new mapkit.Coordinate(46.730678, -117.001147), // Moscow, ID coordinates
         new mapkit.CoordinateSpan(0.01, 0.01) // Smaller span for city view
       );
+
+      46.730678, -117.001147;
 
       // Create a map in the element whose ID is "map"
       const map = new mapkit.Map("map");
@@ -938,10 +937,10 @@ import Layout from "../layouts/Layout.astro";
       map.region = moscowId;
 
       // Add a marker for the theater location
-      const theaterLocation = new mapkit.Coordinate(46.7324, -117.0002);
+      const theaterLocation = new mapkit.Coordinate(46.7295, -117.0007); // 508 S Main St, Moscow, ID 83844
       const marker = new mapkit.MarkerAnnotation(theaterLocation, {
         title: "The Kenworthy Performing Arts Centre",
-        subtitle: "123 Theater Street, Moscow, ID 83844",
+        subtitle: "508 S Main St, Moscow, ID 83844",
       });
       map.addAnnotation(marker);
     };

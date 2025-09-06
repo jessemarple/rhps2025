@@ -1,0 +1,1035 @@
+---
+import Layout from "../layouts/Layout.astro";
+---
+
+<Layout
+  title="The Rocky Horror Picture Show Experience at The Kenworthy - 25th Anniversary"
+>
+  <!-- Hero Section -->
+  <section
+    id="hero"
+    class="scroll-section position-relative min-vh-100 d-flex align-items-center justify-content-center overflow-hidden"
+  >
+    <!-- Background with animated gradient -->
+    <div
+      class="position-absolute top-0 start-0 w-100 h-100 bg-rhps-gradient animate-pulse"
+    >
+    </div>
+    <img
+      src="/images/noun-rocky-horror-681055.svg"
+      alt="The Rocky Horror Picture Show Hero Background"
+      class="position-absolute top-0 start-0 w-100 h-100"
+    />
+
+    <!-- Content -->
+    <div class="position-relative" style="z-index: 10;">
+      <div class="container text-center">
+        <h1 class="font-malicious-moonlight display-1 mb-0">
+          THE ROCKY HORROR
+        </h1>
+        <h2 class="font-malicious-moonlight display-1 mb-0">PICTURE SHOW</h2>
+        <h2 class="font-malicious-moonlight display-1 mb-2">EXPERIENCE</h2>
+
+        <div class="">
+          <p class="fs-3 fw-light mb-3">
+            <span class="text-rhps-gold fw-bold"
+              >25th Anniversary Production</span
+            >
+          </p>
+          <p class="fs-4 mb-4">Celebrating 50 Years of the Cult Classic</p>
+
+          <!-- Show Dates -->
+          <div class="row g-4 mb-5">
+            <div class="col-md-6 text-center">
+              <h3 class="fs-1 fw-bold text-rhps-gold mb-2">October 24th</h3>
+              <p class="fs-5">8:00 PM & 11:59 PM</p>
+            </div>
+            <div class="col-md-6 text-center">
+              <h3 class="fs-1 fw-bold text-rhps-gold mb-2">October 25th</h3>
+              <p class="fs-5">8:00 PM & 11:59 PM</p>
+            </div>
+            <div class="col-12 text-center">
+              <h3 class="fs-2 fw-bold text-rhps-gold mb-2">
+                Kenworthy Performing Arts Centre
+              </h3>
+              <p class="fs-5">Moscow, ID</p>
+            </div>
+          </div>
+        </div>
+        <div class="text-center mb-4">
+          <a
+            href="#tickets"
+            class="btn btn-warning btn-lg fw-bold px-5 py-3"
+            style="
+            background-color: var(--rhps-gold);
+            border-color: var(--rhps-gold);
+            color: black;
+            font-size: 1.7rem;
+          "
+          >
+            <img
+              src="/images/noun-fishnet-stockings-1154871.svg"
+              alt="Fishnet Stockings Icon"
+              style="height: 2.5rem; vertical-align: middle; "
+            />
+            Get Your Tickets
+            <img
+              src="/images/noun-fishnet-stockings-1154871.svg"
+              alt="Fishnet Stockings Icon"
+              style="height: 2.5rem; vertical-align: middle; transform: scaleX(-1);"
+            />
+          </a>
+        </div>
+      </div>
+    </div>
+  </section>
+</Layout>
+
+<!-- Ticket Options Section -->
+<section id="tickets" class="scroll-section py-5">
+  <div class="container">
+    <h2
+      class="font-malicious-moonlight display-4 fw-bold mb-5 text-center text-rhps-gold"
+    >
+      Get Your Tickets
+    </h2>
+
+    <div class="row g-4 mb-5">
+      <!-- October 24th 8PM -->
+      <div class="col-lg-3 col-md-6 position-relative">
+        <div
+          class="rounded p-4 border border-2 border-rhps-gold h-100 text-center position-relative"
+          style="background-color: #1a1a1a; overflow: hidden;"
+        >
+          <!-- Sold Out Overlay -->
+          <div
+            style="
+              position: absolute;
+              top: 0;
+              left: 0;
+              width: 100%;
+              height: 100%;
+              background: rgba(0,0,0,0.65);
+              z-index: 2;
+              display: flex;
+              align-items: center;
+              justify-content: center;
+              pointer-events: none;
+            "
+          >
+            <span
+              style="
+                color: #FFD700;
+                font-size: 2.2rem;
+                font-weight: bold;
+                text-transform: uppercase;
+                letter-spacing: 0.15em;
+                opacity: 0.92;
+                transform: rotate(-25deg);
+                text-shadow: 2px 2px 8px #000, 0 0 12px #FFD70099;
+                user-select: none;
+              "
+            >
+              Sold Out
+            </span>
+          </div>
+          <h3 class="fs-5 fw-bold mb-2 text-rhps-gold">October 24th</h3>
+          <p class="fs-3 fw-bold mb-3">8:00 PM</p>
+          <p class="text-light mb-3">Early Show</p>
+          <p class="fs-2 fw-bold text-rhps-gold mb-3">$25</p>
+          <p class="small mb-4">Prop Kits</p>
+          <button
+            class="btn btn-warning w-100 fw-bold"
+            style="background-color: var(--rhps-gold); border-color: var(--rhps-gold); color: black;"
+            disabled
+          >
+            Select
+          </button>
+        </div>
+      </div>
+
+      <!-- <div class="col-lg-3 col-md-6">
+        <div
+          class="rounded p-4 border border-2 border-rhps-gold h-100 text-center"
+          style="background-color: #1a1a1a;"
+        >
+          <h3 class="fs-5 fw-bold mb-2 text-rhps-gold">October 24th</h3>
+          <p class="fs-3 fw-bold mb-3">8:00 PM</p>
+          <p class="text-light mb-3">Early Show</p>
+          <p class="fs-2 fw-bold text-rhps-gold mb-3">$25</p>
+          <p class="small mb-4">Prop Kits</p>
+          <button
+            class="btn btn-warning w-100 fw-bold"
+            style="background-color: var(--rhps-gold); border-color: var(--rhps-gold); color: black;"
+              data-bs-toggle="modal"
+            data-bs-target="#ticketModal"
+            data-ticket-date="October 24th"
+            data-ticket-time="8:00 PM"
+            data-ticket-price="25"
+            data-ticket-type="Early Show"
+          >
+            Select
+          </button>
+        </div>
+      </div> -->
+
+      <!-- October 24th 11:59PM -->
+      <div class="col-lg-3 col-md-6 position-relative">
+        <div
+          class="rounded p-4 border border-2 border-rhps-gold h-100 text-center position-relative"
+          style="background-color: #1a1a1a; overflow: hidden;"
+        >
+          <!-- Sold Out Overlay -->
+          <div
+            style="
+              position: absolute;
+              top: 0;
+              left: 0;
+              width: 100%;
+              height: 100%;
+              background: rgba(0,0,0,0.65);
+              z-index: 2;
+              display: flex;
+              align-items: center;
+              justify-content: center;
+              pointer-events: none;
+            "
+          >
+            <span
+              style="
+                color: #FFD700;
+                font-size: 2.2rem;
+                font-weight: bold;
+                text-transform: uppercase;
+                letter-spacing: 0.15em;
+                opacity: 0.92;
+                transform: rotate(-25deg);
+                text-shadow: 2px 2px 8px #000, 0 0 12px #FFD70099;
+                user-select: none;
+              "
+            >
+              Available At Door
+            </span>
+          </div>
+          <h3 class="fs-5 fw-bold mb-2 text-rhps-gold">October 24th</h3>
+          <p class="fs-3 fw-bold mb-3">11:59 PM</p>
+          <p class="text-light mb-3">Late Show</p>
+          <p class="fs-2 fw-bold text-rhps-gold mb-3">$25</p>
+          <p class="small mb-4">Prop Kit Included</p>
+          <button
+            class="btn btn-warning w-100 fw-bold"
+            style="background-color: var(--rhps-gold); border-color: var(--rhps-gold); color: black;"
+          >
+            Select
+          </button>
+        </div>
+      </div>
+      <!-- <div class="col-lg-3 col-md-6">
+        <div
+          class="rounded p-4 border border-2 border-rhps-gold h-100 text-center"
+          style="background-color: #1a1a1a;"
+        >
+          <h3 class="fs-5 fw-bold mb-2 text-rhps-gold">October 24th</h3>
+          <p class="fs-3 fw-bold mb-3">11:59 PM</p>
+          <p class="text-light mb-3">Late Show</p>
+          <p class="fs-2 fw-bold text-rhps-gold mb-3">$25</p>
+          <p class="small mb-4">Prop Kit Included</p>
+          <button
+            class="btn btn-warning w-100 fw-bold"
+            style="background-color: var(--rhps-gold); border-color: var(--rhps-gold); color: black;"
+            data-bs-toggle="modal"
+            data-bs-target="#ticketModal"
+            data-ticket-date="October 24th"
+            data-ticket-time="11:59 PM"
+            data-ticket-price="25"
+            data-ticket-type="Late Show"
+          >
+            Select
+          </button>
+        </div>
+      </div> -->
+
+      <!-- October 25th 8PM -->
+      <div class="col-lg-3 col-md-6">
+        <div
+          class="rounded p-4 border border-2 border-rhps-gold h-100 text-center"
+          style="background-color: #1a1a1a;"
+        >
+          <h3 class="fs-5 fw-bold mb-2 text-rhps-gold">October 25th</h3>
+          <p class="fs-3 fw-bold mb-3">8:00 PM</p>
+          <p class="text-light mb-3">Early Show</p>
+          <p class="fs-2 fw-bold text-rhps-gold mb-3">$25</p>
+          <p class="small mb-4">Prop Kit Included</p>
+          <button
+            class="btn btn-warning w-100 fw-bold"
+            style="background-color: var(--rhps-gold); border-color: var(--rhps-gold); color: black;"
+            data-bs-toggle="modal"
+            data-bs-target="#ticketModal"
+            data-ticket-date="October 25th"
+            data-ticket-time="8:00 PM"
+            data-ticket-price="25"
+            data-ticket-type="Early Show"
+          >
+            Select
+          </button>
+        </div>
+      </div>
+
+      <!-- October 25th 11:59PM -->
+      <div class="col-lg-3 col-md-6">
+        <div
+          class="rounded p-4 border border-2 border-rhps-gold h-100 text-center"
+          style="background-color: #1a1a1a;"
+        >
+          <h3 class="fs-5 fw-bold mb-2 text-rhps-gold">October 25th</h3>
+          <p class="fs-3 fw-bold mb-3">11:59 PM</p>
+          <p class="text-light mb-3">Late Show</p>
+          <p class="fs-2 fw-bold text-rhps-gold mb-3">$25</p>
+          <p class="small mb-4">Prop Kit Included</p>
+          <button
+            class="btn btn-warning w-100 fw-bold"
+            style="background-color: var(--rhps-gold); border-color: var(--rhps-gold); color: black;"
+            data-bs-toggle="modal"
+            data-bs-target="#ticketModal"
+            data-ticket-date="October 25th"
+            data-ticket-time="11:59 PM"
+            data-ticket-price="25"
+            data-ticket-type="Late Show"
+          >
+            Select
+          </button>
+        </div>
+      </div>
+    </div>
+
+    <!-- Important Information -->
+    <div class="row g-4 mt-5">
+      <div class="col-md-6">
+        <div
+          class="rounded p-4 border border-rhps-gold"
+          style="background-color: rgba(0, 0, 0, 0.5);"
+        >
+          <h3 class="fs-5 fw-bold mb-3 text-rhps-gold">What's Included</h3>
+          <ul class="list-unstyled text-light">
+            <li class="mb-2">• Reserved seating</li>
+            <li class="mb-2">• Official prop kit with online pre-order</li>
+            <li class="mb-2">• Interactive experience</li>
+            <li class="mb-2">• Costume contest entry</li>
+            <li class="mb-2">• More fun than you can imagine</li>
+          </ul>
+        </div>
+      </div>
+      <div class="col-md-6">
+        <div
+          class="rounded p-4 border border-rhps-gold"
+          style="background-color: rgba(0, 0, 0, 0.5);"
+        >
+          <h3 class="fs-5 fw-bold mb-3 text-rhps-gold">Policies</h3>
+          <ul class="list-unstyled text-light">
+            <li class="mb-2">• No refunds or exchanges</li>
+            <li class="mb-2">• Doors open 30 minutes before show</li>
+            <li class="mb-2">• Costumes encouraged!</li>
+            <li class="mb-2">• 18+ recommended</li>
+            <li class="mb-2">
+              • We reserve the right to refuse service to anyone
+            </li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- Ticket Purchase Modal -->
+<div
+  class="modal fade"
+  id="ticketModal"
+  tabindex="-1"
+  aria-labelledby="ticketModalLabel"
+  aria-hidden="true"
+>
+  <div class="modal-dialog modal-lg modal-fullscreen-md-down">
+    <div
+      class="modal-content"
+      style="background-color: #1a1a1a; border: 2px solid var(--rhps-gold);"
+    >
+      <div class="modal-header border-bottom border-rhps-gold">
+        <h1
+          class="modal-title fs-2 fw-bold text-rhps-gold"
+          id="ticketModalLabel"
+        >
+          Complete Your Purchase
+        </h1>
+        <button
+          type="button"
+          class="btn-close btn-close-white"
+          data-bs-dismiss="modal"
+          aria-label="Close"></button>
+      </div>
+      <div class="modal-body p-4">
+        <form>
+          <div class="row g-3 mb-3">
+            <div class="col-md-6">
+              <label class="form-label fw-medium">First Name</label>
+              <input
+                type="text"
+                class="form-control form-control-lg"
+                style="background-color: #2a2a2a; border-color: #6c757d; color: white;"
+                required
+              />
+            </div>
+            <div class="col-md-6">
+              <label class="form-label fw-medium">Last Name</label>
+              <input
+                type="text"
+                class="form-control form-control-lg"
+                style="background-color: #2a2a2a; border-color: #6c757d; color: white;"
+                required
+              />
+            </div>
+          </div>
+
+          <div class="mb-3">
+            <label class="form-label fw-medium">Email</label>
+            <input
+              type="email"
+              class="form-control form-control-lg"
+              style="background-color: #2a2a2a; border-color: #6c757d; color: white;"
+              required
+            />
+          </div>
+
+          <div class="mb-3">
+            <label class="form-label fw-medium">Phone Number</label>
+            <input
+              type="tel"
+              class="form-control form-control-lg"
+              style="background-color: #2a2a2a; border-color: #6c757d; color: white;"
+              required
+            />
+          </div>
+
+          <div class="mb-4">
+            <label class="form-label fw-medium">Number of Tickets</label>
+            <select
+              class="form-select form-select-lg"
+              style="background-color: #2a2a2a; border-color: #6c757d; color: white;"
+              id="ticketQuantity"
+            >
+              <option value="1">1</option>
+              <option value="2">2</option>
+              <option value="3">3</option>
+              <option value="4">4</option>
+              <option value="5">5</option>
+              <option value="6">6</option>
+            </select>
+          </div>
+
+          <div class="rounded p-3 mb-3" style="background-color: #2a2a2a;">
+            <h4 class="fw-bold mb-2">Order Summary</h4>
+            <div class="d-flex justify-content-between mb-2">
+              <span id="ticketSummary">1 Ticket - October 25th 8:00 PM</span>
+              <span id="ticketPrice">$25.00</span>
+            </div>
+            <div class="d-flex justify-content-between mb-2">
+              <span id="propKitSummary">Prop Kit (1)</span>
+              <span>Included</span>
+            </div>
+            <hr class="border-secondary my-2" />
+            <div class="d-flex justify-content-between fw-bold">
+              <span>Total</span>
+              <span id="totalPrice">$25.00</span>
+            </div>
+          </div>
+
+          <button
+            type="submit"
+            class="btn btn-warning w-100 fw-bold py-3 fs-5"
+            style="background-color: var(--rhps-gold); border-color: var(--rhps-gold); color: black;"
+          >
+            Proceed to Payment
+          </button>
+        </form>
+      </div>
+    </div>
+  </div>
+</div>
+
+<!-- FAQ Section -->
+<section id="faq" class="scroll-section py-5">
+  <div class="container">
+    <h2
+      class="font-malicious-moonlight display-4 fw-bold mb-5 text-center text-rhps-gold"
+    >
+      Frequently Asked Questions
+    </h2>
+
+    <div class="row g-4">
+      <div class="col-12">
+        <div
+          class="rounded p-4 border border-rhps-gold"
+          style="background-color: #1a1a1a;"
+        >
+          <h3 class="fs-5 fw-bold mb-3 text-rhps-gold">
+            What is The Rocky Horror Picture Show?
+          </h3>
+          <p class="text-light">
+            The Rocky Horror Picture Show is a 1975 musical science fiction
+            horror-comedy film that has become the longest-running theatrical
+            release in film history. It's a cult classic known for its
+            interactive audience participation, outrageous characters, and
+            memorable songs.
+          </p>
+        </div>
+      </div>
+
+      <div class="col-12">
+        <div
+          class="rounded p-4 border border-rhps-gold"
+          style="background-color: #1a1a1a;"
+        >
+          <h3 class="fs-5 fw-bold mb-3 text-rhps-gold">
+            Can I bring my own props?
+          </h3>
+          <p class="text-light">
+            We provide official prop kits with your ticket purchase that include
+            everything you need! You're welcome to bring additional props, but
+            they must be safe and appropriate. No rice, toast, or water guns
+            please - we'll provide safe alternatives.
+          </p>
+        </div>
+      </div>
+
+      <div class="col-12">
+        <div
+          class="rounded p-4 border border-rhps-gold"
+          style="background-color: #1a1a1a;"
+        >
+          <h3 class="fs-5 fw-bold mb-3 text-rhps-gold">
+            Is there an age restriction?
+          </h3>
+          <p class="text-light">
+            The show is recommended for ages 18+ due to mature content, adult
+            themes, and strong language. All attendees must be accompanied by an
+            adult if under 18.
+          </p>
+        </div>
+      </div>
+
+      <div class="col-12">
+        <div
+          class="rounded p-4 border border-rhps-gold"
+          style="background-color: #1a1a1a;"
+        >
+          <h3 class="fs-5 fw-bold mb-3 text-rhps-gold">
+            Should I dress up in costume?
+          </h3>
+          <p class="text-light">
+            Absolutely! Costumes are highly encouraged and add to the fun. We'll
+            have a costume contest with prizes. Whether you go as
+            Frank-N-Furter, Janet, Brad, or any other character, let your
+            creativity shine!
+          </p>
+        </div>
+      </div>
+      <div class="col-12">
+        <div
+          class="rounded p-4 border border-rhps-gold"
+          style="background-color: #1a1a1a;"
+        >
+          <h3 class="fs-5 fw-bold mb-3 text-rhps-gold">When do doors open?</h3>
+          <p class="text-light">
+            Doors open 30 minutes before showtime. We recommend arriving 45-60
+            minutes before showtime to find parking and get seated.
+          </p>
+        </div>
+      </div>
+      <div class="col-12">
+        <div
+          class="rounded p-4 border border-rhps-gold"
+          style="background-color: #1a1a1a;"
+        >
+          <h3 class="fs-5 fw-bold mb-3 text-rhps-gold">
+            What's the difference between the early and late shows?
+          </h3>
+          <p class="text-light">
+            Both shows feature the same amazing production! The 8:00 PM shows
+            tend to be slightly more family-friendly, while the 11:59 PM shows
+            embrace the full midnight movie tradition with more intense audience
+            participation.
+          </p>
+        </div>
+      </div>
+
+      <div class="col-12">
+        <div
+          class="rounded p-4 border border-rhps-gold"
+          style="background-color: #1a1a1a;"
+        >
+          <h3 class="fs-5 fw-bold mb-3 text-rhps-gold">
+            Can I get a refund or exchange my tickets?
+          </h3>
+          <p class="text-light">
+            All ticket sales are final. No refunds or exchanges are available.
+            Please double-check your show date and time before completing your
+            purchase.
+          </p>
+        </div>
+      </div>
+
+      <div class="col-12">
+        <div
+          class="rounded p-4 border border-rhps-gold"
+          style="background-color: #1a1a1a;"
+        >
+          <h3 class="fs-5 fw-bold mb-3 text-rhps-gold">
+            Is there parking available?
+          </h3>
+          <p class="text-light">
+            Yes but also no. Nearby street parking is available. We recommend
+            arriving 45-60 minutes before showtime to find parking and get
+            seated.
+          </p>
+        </div>
+      </div>
+
+      <div class="col-12">
+        <div
+          class="rounded p-4 border border-rhps-gold"
+          style="background-color: #1a1a1a;"
+        >
+          <h3 class="fs-5 fw-bold mb-3 text-rhps-gold">
+            What if I've never seen Rocky Horror before?
+          </h3>
+          <p class="text-light">
+            Perfect! Virgin audience members (first-timers) are celebrated and
+            welcomed. Don't worry about knowing all the callbacks - you'll pick
+            them up quickly, and the cast will guide you through the experience.
+          </p>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- About Section -->
+<section id="about" class="scroll-section py-5">
+  <div class="container">
+    <h2
+      class="font-malicious-moonlight display-4 fw-bold mb-5 text-center text-rhps-gold"
+    >
+      About Our Production
+    </h2>
+
+    <div class="row g-5 align-items-center mb-5">
+      <div class="col-md-6">
+        <h3 class="fs-1 fw-bold mb-4 text-rhps-gold">Our 25th Anniversary</h3>
+        <p class="fs-5 lh-lg mb-3">
+          For a quarter of a century, our community theater has been bringing
+          the cult classic "The Rocky Horror Picture Show" to life, creating
+          unforgettable experiences for audiences year after year.
+        </p>
+        <p class="fs-5 lh-lg mb-3">
+          What started as a small production has grown into one of the most
+          anticipated events of the year, drawing fans from across the region to
+          experience the magic, music, and sheer theatrical brilliance of this
+          beloved show.
+        </p>
+      </div>
+      <div class="col-md-6">
+        <div
+          class="rounded p-4 border border-2 border-rhps-gold"
+          style="background-color: #1a1a1a;"
+        >
+          <img
+            src="/images/kenworthy_marque2.jpg"
+            alt="Production Highlights"
+            style="width: 100%; height: auto;"
+          />
+        </div>
+      </div>
+    </div>
+
+    <div
+      class="rounded p-4 border border-2 border-rhps-gold mb-5"
+      style="background-color: #1a1a1a;"
+    >
+      <h3 class="font-malicious-moonlight fs-1 mb-4 text-rhps-gold text-center">
+        The Rocky Horror Phenomenon
+      </h3>
+      <p class="fs-5 lh-lg mb-4">
+        "The Rocky Horror Picture Show" premiered in 1975 and quickly became a
+        cultural phenomenon. What makes this show truly special is its unique
+        blend of science fiction, horror, comedy, and musical theater, all
+        wrapped in a celebration of individuality and self-expression.
+      </p>
+      <p class="fs-5 lh-lg">
+        Our production honors the original film while adding our own community's
+        unique flavor, creating an experience that's both nostalgic and fresh.
+        Whether you're a longtime fan or experiencing Rocky Horror for the first
+        time, you're guaranteed an unforgettable night of interactive theater.
+      </p>
+    </div>
+
+    <div class="row g-4">
+      <div class="col-md-4">
+        <div
+          class="text-center rounded p-4 border border-rhps-gold h-100"
+          style="background-color: #1a1a1a;"
+        >
+          <div class="fs-1 mb-3">
+            <img
+              src="/images/noun-fishnet-stockings-white-1154871.svg"
+              alt="The Rocky Horror Picture Show Logo"
+              style="height: 2.5rem; vertical-align: middle; scale: 1.5;"
+            />
+          </div>
+          <h4 class="fs-5 fw-bold mb-3 text-rhps-gold">The Cast</h4>
+          <p class="text-light">
+            Our talented cast brings the iconic characters to life with passion,
+            energy, and authentic performances that honor the original while
+            making them their own.
+          </p>
+        </div>
+      </div>
+      <div class="col-md-4">
+        <div
+          class="text-center rounded p-4 border border-rhps-gold h-100"
+          style="background-color: #1a1a1a;"
+        >
+          <div class="fs-1 mb-3">
+            <img
+              src="/images/noun-rocky-horror-white-681055.svg"
+              alt="The Rocky Horror Picture Show Logo"
+              style="height: 2.5rem; vertical-align: middle; scale: 1.5;"
+            />
+          </div>
+          <h4 class="fs-5 fw-bold mb-3 text-rhps-gold">The Experience</h4>
+          <p class="text-light">
+            More than just a show, this is an interactive experience where
+            audience participation is not just encouraged—it's essential to the
+            magic.
+          </p>
+        </div>
+      </div>
+      <div class="col-md-4">
+        <div
+          class="text-center rounded p-4 border border-rhps-gold h-100"
+          style="background-color: #1a1a1a;"
+        >
+          <div class="fs-1 mb-3">
+            <img
+              src="/images/noun-radio-tower-white-5414424.svg"
+              alt="The Rocky Horror Picture Show Logo"
+              style="height: 2.5rem; vertical-align: middle; scale: 1.5;"
+            />
+          </div>
+          <h4 class="fs-5 fw-bold mb-3 text-rhps-gold">The Legacy</h4>
+          <p class="text-light">
+            For 25 years, we've been part of the Rocky Horror tradition,
+            creating memories and building a community around this beloved cult
+            classic.
+          </p>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- What to Expect Section -->
+<section class="py-5">
+  <div class="container">
+    <h2
+      class="font-malicious-moonlight display-4 mb-5 text-center text-rhps-gold"
+    >
+      What to Expect
+    </h2>
+    <div class="row g-4">
+      <div class="col-md-4">
+        <div
+          class="text-center rounded p-4 border border-rhps-gold h-100"
+          style="background-color: rgba(0, 0, 0, 0.5);"
+        >
+          <div class="fs-1 mb-3">
+            <img
+              src="/images/noun-jump-left-white-681071.svg"
+              alt="The Rocky Horror Picture Show Logo"
+              style="height: 2.5rem; vertical-align: middle; scale: 1.5;"
+            />
+          </div>
+          <h3 class="fs-5 fw-bold mb-3">Audience Participation</h3>
+          <p class="text-light">
+            Shout, sing, and dance along with the cast. Audience participation
+            is encouraged! Don't worry if you don't know the steps, the cast
+            will help you out.
+          </p>
+        </div>
+      </div>
+      <div class="col-md-4">
+        <div
+          class="text-center rounded p-4 border border-rhps-gold h-100"
+          style="background-color: rgba(0, 0, 0, 0.5);"
+        >
+          <div class="fs-1 mb-3">
+            <img
+              src="/images/noun-toast-white-8049484.svg"
+              alt="The Rocky Horror Picture Show Logo"
+              style="height: 2.5rem; vertical-align: middle; scale: 1.5;"
+            />
+          </div>
+          <h3 class="fs-5 fw-bold mb-3">Props</h3>
+          <p class="text-light">
+            You will probably get showered in toast - or at least some rice. Get
+            your official prop kit with everything you need to participate in
+            the show.
+          </p>
+        </div>
+      </div>
+      <div class="col-md-4">
+        <div
+          class="text-center rounded p-4 border border-rhps-gold h-100"
+          style="background-color: rgba(0, 0, 0, 0.5);"
+        >
+          <div class="fs-1 mb-3">
+            <img
+              src="/images/noun-mask-white-2154564.svg"
+              alt="The Rocky Horror Picture Show Logo"
+              style="height: 2.5rem; vertical-align: middle; scale: 1.5;"
+            />
+          </div>
+          <h3 class="fs-5 fw-bold mb-3">Costumes</h3>
+          <p class="text-light">
+            People tend to dress up, but it's not required. Show off your best
+            Rocky Horror costume and compete for clout. Who's goign to be best
+            in show this year?
+          </p>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- Location Section -->
+<section id="location" class="scroll-section py-5">
+  <div class="container">
+    <h2
+      class="font-malicious-moonlight display-4 mb-5 text-center text-rhps-gold"
+    >
+      Where Is It?
+    </h2>
+
+    <div class="row g-5">
+      <!-- Location Information -->
+      <div class="col-md-4">
+        <h3 class="font-malicious-moonlight fs-1 mb-4 text-rhps-gold">
+          The Kenworthy Performing Arts Centre
+        </h3>
+
+        <div>
+          <div class="d-flex mb-4">
+            <div>
+              <p class="text-light">508 S Main St<br />Moscow, ID 83844</p>
+              <a
+                href="https://www.kenworthy.org/"
+                target="_blank"
+                class="text-rhps-gold">kenworthy.org</a
+              >
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Location-->
+      <div class="col-md-8">
+        <div
+          class="rounded p-4 border border-rhps-gold"
+          style="background-color: #1a1a1a;"
+        >
+          <div>
+            <div
+              id="map"
+              style="height: 400px; width: 100%; border-radius: 8px;"
+            >
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- Footer -->
+<footer class="py-5 border-top border-rhps-gold">
+  <div class="container text-center">
+    <p class="fs-5 mb-3">
+      <span class="text-rhps-gold fw-bold"
+        >The Rocky Horror Picture Show Experience at The Kenworthy</span
+      >
+    </p>
+    <p class="mb-3">25th Anniversary Production • October 24-25, 2025</p>
+    <p class="small">"Don't dream it, be it!" - Dr. Frank-N-Furter</p>
+    <p class="small">
+      Copyright 2025, The Rocky Horror Picture Show Experience at The Kenworthy
+    </p>
+    <p class="small" aria-label="love" title="love">
+      This site was made with ❤️ by <a
+        href="https://www.jessemarple.com/"
+        target="_blank"
+        class="text-light">jesse marple</a
+      >
+    </p>
+  </div>
+
+  <!-- MapKit Script -->
+  <script
+    src="https://cdn.apple-mapkit.com/mk/5.x.x/mapkit.core.js"
+    crossorigin="anonymous"
+    async
+    data-callback="initMapKit"
+    data-libraries="map,annotations"
+    data-token="eyJraWQiOiJLVTY2SEg0RlM2IiwidHlwIjoiSldUIiwiYWxnIjoiRVMyNTYifQ.eyJpc3MiOiI5Qk45OFE4WEhVIiwiaWF0IjoxNzU3MTE1OTIxLCJleHAiOjE3NTc3NDY3OTl9.Vj2s9dobshxMYqYE4o5ktr3vXqjt0gFO_Jky9ciI4EvY6nONoIBODYrb7yVWNeJc8rx_9lB90PJ7ujR_7VLOWQ"
+  ></script>
+
+  <script type="module">
+    // Wait for MapKit JS to be ready to use.
+    const setupMapKitJs = async () => {
+      // If MapKit JS is not yet loaded...
+      if (!window.mapkit || window.mapkit.loadedLibraries.length === 0) {
+        // ...await <script>'s data-callback (window.initMapKit).
+        await new Promise((resolve) => {
+          window.initMapKit = resolve;
+        });
+        // Clean up.
+        delete window.initMapKit;
+      }
+    };
+
+    /**
+     * Script Entry Point
+     */
+    const main = async () => {
+      console.log("MapKit initialization starting...");
+
+      // Wait for DOM to be ready
+      if (document.readyState === "loading") {
+        await new Promise((resolve) => {
+          document.addEventListener("DOMContentLoaded", resolve);
+        });
+      }
+
+      await setupMapKitJs();
+
+      // Check if the map element exists
+      const mapElement = document.getElementById("map");
+      if (!mapElement) {
+        console.error("Map element with ID 'map' not found");
+        return;
+      }
+
+      // Set coordinates for Moscow, ID (The Kenworthy Performing Arts Centre)
+      const moscowId = new mapkit.CoordinateRegion(
+        new mapkit.Coordinate(46.7324, -117.0002), // Moscow, ID coordinates
+        new mapkit.CoordinateSpan(0.01, 0.01) // Smaller span for city view
+      );
+
+      // Create a map in the element whose ID is "map"
+      const map = new mapkit.Map("map");
+      console.log("Map created successfully:", map);
+      map.region = moscowId;
+
+      // Add a marker for the theater location
+      const theaterLocation = new mapkit.Coordinate(46.7324, -117.0002);
+      const marker = new mapkit.MarkerAnnotation(theaterLocation, {
+        title: "The Kenworthy Performing Arts Centre",
+        subtitle: "123 Theater Street, Moscow, ID 83844",
+      });
+      map.addAnnotation(marker);
+    };
+
+    main();
+  </script>
+
+  <!-- Ticket Modal JavaScript -->
+  <script>
+    document.addEventListener("DOMContentLoaded", function () {
+      // Handle ticket selection and modal updates
+      const ticketModal = document.getElementById("ticketModal");
+      const ticketQuantity = document.getElementById("ticketQuantity");
+      const ticketSummary = document.getElementById("ticketSummary");
+      const ticketPrice = document.getElementById("ticketPrice");
+      const propKitSummary = document.getElementById("propKitSummary");
+      const totalPrice = document.getElementById("totalPrice");
+
+      // Store current ticket data
+      let currentTicketData = {
+        date: "",
+        time: "",
+        price: 0,
+        type: "",
+      };
+
+      // Check if all required elements exist
+      if (
+        !ticketModal ||
+        !ticketQuantity ||
+        !ticketSummary ||
+        !ticketPrice ||
+        !propKitSummary ||
+        !totalPrice
+      ) {
+        console.error("Required modal elements not found");
+        return;
+      }
+
+      // Listen for modal show events
+      ticketModal.addEventListener("show.bs.modal", function (event: any) {
+        const button = event.relatedTarget as HTMLButtonElement;
+
+        if (!button) return;
+
+        // Get ticket data from button attributes
+        currentTicketData = {
+          date: button.getAttribute("data-ticket-date") || "",
+          time: button.getAttribute("data-ticket-time") || "",
+          price: parseInt(button.getAttribute("data-ticket-price") || "0"),
+          type: button.getAttribute("data-ticket-type") || "",
+        };
+
+        // Update modal content
+        updateModalContent();
+      });
+
+      // Listen for quantity changes
+      ticketQuantity.addEventListener("change", function () {
+        updateModalContent();
+      });
+
+      function updateModalContent() {
+        if (
+          !ticketQuantity ||
+          !ticketSummary ||
+          !ticketPrice ||
+          !propKitSummary ||
+          !totalPrice
+        ) {
+          return;
+        }
+
+        const quantity = parseInt((ticketQuantity as HTMLSelectElement).value);
+        const total = currentTicketData.price * quantity;
+
+        // Update ticket summary
+        ticketSummary.textContent = `${quantity} Ticket${quantity > 1 ? "s" : ""} - ${currentTicketData.date} ${currentTicketData.time}`;
+
+        // Update ticket price
+        ticketPrice.textContent = `$${total.toFixed(2)}`;
+
+        // Update prop kit summary
+        propKitSummary.textContent = `Prop Kit${quantity > 1 ? "s" : ""} (${quantity})`;
+
+        // Update total price
+        totalPrice.textContent = `$${total.toFixed(2)}`;
+      }
+    });
+  </script>
+</footer>

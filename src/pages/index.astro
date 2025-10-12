@@ -615,36 +615,54 @@ import Layout from "../layouts/Layout.astro";
         </div>
 
         <!-- October 25th 8PM -->
-        <div class="col-lg-3 col-md-6">
+        <div class="col-lg-3 col-md-6 position-relative">
           <div
-            class="rounded p-4 border border-2 border-rhps-gold h-100 text-center"
-            style="background-color: #1a1a1a;"
+            class="rounded p-4 border border-2 border-rhps-gold h-100 text-center position-relative"
+            style="background-color: #1a1a1a; overflow: hidden;"
           >
+            <div
+              style="
+                position: absolute;
+                top: 0;
+                left: 0;
+                width: 100%;
+                height: 100%;
+                background: rgba(0,0,0,0.65);
+                z-index: 2;
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                pointer-events: none;
+              "
+            >
+              <span
+                style="
+                  color: #FFD700;
+                  font-size: 2.2rem;
+                  font-weight: bold;
+                  text-transform: uppercase;
+                  letter-spacing: 0.15em;
+                  opacity: 0.92;
+                  transform: rotate(-25deg);
+                  text-shadow: 2px 2px 8px #000, 0 0 12px #FFD70099;
+                  user-select: none;
+                "
+              >
+                Sold Out
+              </span>
+            </div>
             <h3 class="fs-5 fw-bold mb-2 text-rhps-gold">October 25th</h3>
             <p class="fs-3 fw-bold mb-3">8:00 PM</p>
             <p class="text-light mb-3">Early Show VIP</p>
             <p class="fs-2 fw-bold text-rhps-gold mb-3">$300</p>
             <p class="small mb-4">Prop Kit Included</p>
-            <a href="https://buy.stripe.com/14A4gB9gh0oU4p249W6c005">
-              <button
-                class="btn btn-warning w-100 fw-bold"
-                style="background-color: var(--rhps-gold); border-color: var(--rhps-gold); color: black;"
-              >
-                Select
-              </button>
-            </a>
-            <!-- <button
-            class="btn btn-warning w-100 fw-bold"
-            style="background-color: var(--rhps-gold); border-color: var(--rhps-gold); color: black;"
-            data-bs-toggle="modal"
-            data-bs-target="#ticketModal"
-            data-ticket-date="October 25th"
-            data-ticket-time="8:00 PM"
-            data-ticket-price="25"
-            data-ticket-type="Early Show"
-          >
-            Select
-          </button> -->
+            <button
+              class="btn btn-warning w-100 fw-bold"
+              style="background-color: var(--rhps-gold); border-color: var(--rhps-gold); color: black;"
+              disabled
+            >
+              Select
+            </button>
           </div>
         </div>
 
